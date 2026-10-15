@@ -127,7 +127,7 @@ svg{display:block}
     <div id="nm" class="t script"><span></span></div>
     <img id="cp" class="abs cpimg" alt="Manisha and Suparno">
     <div id="det" class="abs">
-      <div class="row"><div><b>S/o</b><small>Mr. Banshinath Pakhira &amp;<br>Mrs. Mantu Pakhira</small></div><div><b>D/o</b><small>Mr. Nandadulal Sengupta &amp;<br>Mrs. Khela Sengupta</small></div></div>
+      <div class="row"><div><b>D/o</b><small>Mr. Banshinath Pakhira &amp;<br>Mrs. Mantu Pakhira</small></div><div><b>S/o</b><small>Mr. Nandadulal Sengupta &amp;<br>Mrs. Khela Sengupta</small></div></div>
       <div><p class="on-l">ON</p><p class="date">12th February, 2027<br>at 8 pm</p></div>
       <div class="dv"></div>
       <div><p class="ven">VENUE</p><p class="addr">Maa Bhabatarini Bhaban,<br>Joypur, Howrah 711401</p></div>
@@ -169,7 +169,7 @@ async function start(){
   await T($("w1"),"Wedding",110);await T($("w2"),"Invitation",100);await W(2200);
   L("s2",0);await W(900);L("s3",1);await W(500);
   await T($("i1"),"We are delighted to invite you",45);await T($("i2"),"to the wedding ceremony of",45);
-  await T($("nm").firstElementChild,`${CFG.groom} & ${CFG.bride}`,120);
+  await T($("nm").firstElementChild,`${CFG.bride} & ${CFG.groom}`,120);
   $("cp").classList.add("up");await W(3200);
   $("cp").classList.add("gone");L("det",1);L("por",1);await W(4500);
   L("again",1);
